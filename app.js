@@ -25,7 +25,7 @@ app.get('/api', (req, res) => {
   };
 
   res.json(response);
-  });
+});
 
 // Start the server
 app.listen(port, () => {
