@@ -11,7 +11,7 @@ app.get('/api', (req, res) => {
   const currentDay = daysOfWeek[currentDate.getUTCDay()];
 
   // Get the current UTC time in the format "2023-09-07T22:00:10Z"
-  const currentUTC = new Date().toISOString();
+  const currentUTC = new Date().toISOString().split('.')[0] + 'Z';
 
   // Construct the JSON response
   const response = {
