@@ -59,8 +59,8 @@ app.get('/api', (req, res) => {
     current_day: currentDay,
     utc_time: currentUTC.toISOString(),
     track,
-    github_file_url: 'https://github.com/username/repo/blob/main/file_name.ext',
-    github_repo_url: 'https://github.com/username/repo',
+    github_file_url: 'https://github.com/JesusOfLagos/HNG-Stage-One/blob/main/app.js',
+    github_repo_url: 'https://github.com/JesusOfLagos/HNG-Stage-One',
     status_code: 200,
   };
 
