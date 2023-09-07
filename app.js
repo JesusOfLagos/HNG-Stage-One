@@ -8,16 +8,6 @@ app.get('/api', (req, res) => {
   // Get the current day of the week
   const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const currentDate = new Date();
-  const currentDay = daysOfWeek[currentDate.getUTCDay(const express = require('express');
-const app = express();
-const port = process.env.PORT || 3001; // Use port 3001 by default
-
-app.get('/api', (req, res) => {
-  const { slack_name, track } = req.query;
-
-  // Get the current day of the week
-  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  const currentDate = new Date();
   const currentDay = daysOfWeek[currentDate.getUTCDay()];
 
   // Get the current UTC time in the format "2023-09-07T22:00:10Z"
