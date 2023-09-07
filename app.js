@@ -14,8 +14,8 @@ app.get('/api', (req, res) => {
   const currentUTC = new Date();
   currentUTC.setMinutes(currentUTC.getUTCMinutes() - 2);
 
-  // Format the UTC time as "2023-09-07T21:37:30Z"
-  const formattedUTC = currentUTC.toISOString().slice(0, 19) + 'Z';
+  // Format the UTC time as "2023-09-07T21:41:29Z"
+  const formattedUTC = currentUTC.toISOString().replace(/\.\d+Z$/, 'Z');
 
   // Construct the JSON response
   const response = {
